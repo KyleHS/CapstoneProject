@@ -1,0 +1,17 @@
+header {
+  background-color: white;
+  height: 64px;
+}
+
+.colmarheading {
+  display: inline-flex;
+  height: 32px;
+  margin-left: 24px;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  text-align: right;
+  margin-right: 24px;
+}
