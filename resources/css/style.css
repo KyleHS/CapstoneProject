@@ -41,6 +41,10 @@ html {
   display: none;
 }
 
+.nav {
+  display: inline-flex;
+}
+
 .nav span {
   margin: 8px;
   font-family: sans-serif;
@@ -55,6 +59,10 @@ html {
 .learn-section {
   font-family: sans-serif;
   background-color: #e6e6e6;
+}
+
+.learn-container {
+  display: flex;
 }
 
 #title {
