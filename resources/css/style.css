@@ -64,6 +64,7 @@ html {
 .learn-section img {
   margin: 32px 40px 32px 24px;
   max-width: 60%;
+  height: 550px;
 }
 
 .text{
@@ -74,7 +75,6 @@ html {
   width: 100%;
   font-family: sans-serif;
 }
-
 
 .button{
   background-color: ;
