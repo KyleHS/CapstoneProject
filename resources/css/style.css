@@ -44,6 +44,47 @@ html {
 .nav span {
   margin: 8px;
   font-family: sans-serif;
+}
+
+.nav span a {
+  text-decoration: none;
   font-weight: bold;
   color: #595959;
+}
+
+.learn-section {
+  font-family: sans-serif;
+  background-color: #e6e6e6;
+}
+
+#title {
+
+}
+
+.learn-section img {
+  margin: 32px 40px 32px 24px;
+  max-width: 60%;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+
+.button{
+  background-color: ;
+  color: ;
+  width: 60%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.button:hover{
+  background-color: ;
+  color: ;
 }
