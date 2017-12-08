@@ -56,6 +56,8 @@ html {
   color: #595959;
 }
 
+ /*1st Section*/
+
 .learn-section {
   font-family: sans-serif;
   background-color: #e6e6e6;
@@ -65,8 +67,12 @@ html {
   display: flex;
 }
 
-#title {
-
+.text h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: #262626;
+  padding-bottom: 16px;
+  width: 100%;
 }
 
 .learn-section img {
@@ -81,18 +87,396 @@ html {
   justify-content: center;
   align-items: baseline;
   width: 100%;
+}
+
+.text h3 {
+  padding-bottom: 16px;
+  font-size: 1.2rem;
+  color: #666666;
+  width: 100%;
   font-family: sans-serif;
 }
 
 .button{
-  background-color: ;
-  color: ;
-  width: 60%;
+  background-color: #333333;
+  color: white;
+  width: 63%;
   text-align: center;
   padding: 8px 0;
 }
 
 .button:hover{
-  background-color: ;
-  color: ;
+  background-color: #666666;
+}
+
+.learn-mobile{
+  display: none;
+}
+
+/*BANNER MOBILE*/
+@media only screen and (max-width: 768px){
+
+.learn-section {
+  display: none;
+}
+.learn-mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: #C0B283;
+}
+
+.learn-mobile img{
+  width: 100%;
+  height: auto;
+  /*margin-bottom: 0;*/
+}
+
+.text-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.text-mobile h3{
+  margin-top: .5rem;
+}
+.button-mobile {
+  background-color: #373737;
+  color: #F4F4F4;
+  width: 70%;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.button-mobile:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+}
+
+/*COMPANY INFO!*/
+
+.information {
+  display: flex;
+  /*border: 2px solid red;*/
+  flex-direction: row;
+  font-family: "Hind Vadodara";
+}
+
+.uni-info{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /*border: 1px solid blue;*/
+  margin: 32px 24px;
+}
+
+.uni-info img{
+  width: 100%;
+  flex-grow: 3;
+}
+
+.uni-info h2,
+.uni-info p{
+  color: #373737;
+}
+
+.uni-info h2{
+  font-size: 1.5rem;
+}
+.other-info{
+  margin: 32px 0;
+  width: 40%;
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid green;*/
+  border-left: 1px solid #DCD0C0;
+}
+
+.info {
+  display: flex;
+  /*border: 1px solid blue;*/
+}
+.info:nth-child(2n+0) {
+  background-color: #DCD0C0;
+}
+.info-img {
+  margin: 16px;
+  /*border: 2px solid green;*/
+}
+
+.info-img img {
+  width: 10rem;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid green;*/
+  justify-content: center;
+  align-items:
+}
+
+.text-info h3 {
+  margin-bottom: 8px;
+  color: #373737;
+  font-size: 1.15rem;
+}
+
+.text-info span {
+  margin-bottom: 8px;
+  color: #373737;
+}
+
+#read {
+  color: blue;
+}
+
+#read:hover {
+  color: #C0B283;
+}
+
+.other-info-mob {
+  display: none;
+}
+/*MEDIA QUERY*/
+@media only screen and (max-width: 480px) {
+  .uni-info {
+    display: none;
+  }
+  .other-info {
+    display: none;
+  }
+
+  .other-info-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 0 16px;
+  }
+  #read-mobile {
+    color: blue;
+    display: block;
+    margin: 16px 0;
+  }
+  #read-mobile:hover {
+    color: #C0B283;
+  }
+
+  .info-img-mobile img {
+    width: 100%;
+  }
+  .text-info-mobile{
+    text-align: center;
+  }
+  .text-info-mobile h3{
+    margin-bottom: 8px;
+    color: #373737;
+    font-size: 1.15rem;
+  }
+
+  /*.info-mob:nth-child(2n+0){
+    background-color: #DCD0C0;
+  }*/
+}
+
+/*PROGRAMS SECTION BEGINS*/
+
+.programs{
+  background-color: #C0B283;
+}
+.program-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program{
+  /*border: 2px solid green;*/
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  background-color: #F4F4F4;
+}
+
+.program-img img{
+  width: 100%;
+}
+
+.program span{
+  display: block;
+}
+
+.program-text{
+  margin: 16px;
+  color: #373737;
+}
+
+.program:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+
+.programs-mob{
+  display: none;
+}
+
+#start{
+  text-align: center;
+  padding: 32px;
+  margin: 0px;
+  font-family: 'Biryani';
+  font-weight: 800;
+  font-size: 2rem;
+}
+/*PROGRAMS SECTION MOBILE*/
+@media only screen and (max-width: 480px){
+.programs{
+  display: none;
+}
+.programs-mob{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #C0B283;
+
+}
+.program-text-mob:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+.program-text-mob{
+  margin-bottom: 8px;
+  background-color: #F4F4f4;
+}
+
+}
+/*Thesis Exhibit*/
+
+
+.thesis-exhibit h1{
+  text-align: center;
+  /*margin: 32px 0;*/
+  color: #373737;
+  font-size: 2rem;
+  font-family: 'Biryani';
+}
+
+/*THESIS BEGINS*/
+
+.thesis-info{
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.thesis-main-info{
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 16px;
+  width: 70%;
+}
+
+.thesis-video video{
+  width: 100%;
+  /*border: 3px solid green;*/
+}
+
+.thesis-video{
+  margin-bottom: 24px;
+}
+.thesis-video-text{
+  color: #373737;
+}
+
+.thesis-video-text h2{
+  font-size: 1.75rem;
+  /*border: 1px solid red;*/
+  margin: 0;
+}
+
+.thesis-sub{
+  display: flex;
+}
+
+.thesis-sub:nth-child(2n+0){
+  background-color: #DCD0C0;
+}
+
+.thesis-sub-img{
+  margin: 16px;
+}
+.thesis-sub-img img{
+  width: 10rem;
+}
+
+.thesis-sub-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #373737;
+  margin: 2rem;
+}
+
+.thesis-sub-txt h3{
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.thesis-exhibit-mob{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis-exhibit{
+    display: none;
+  }
+  .thesis-exhibit-mob{
+    display: flex;
+    flex-direction: column;
+  }
+  .thesis-exhibit-mob h1{
+    text-align: center;
+  }
+  .thesis-video-mob video{
+    width: 100%;
+  }
+
+}
+/*BEGIN FOOTER*/
+
+footer{
+  background-color: #C0B283;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  /*border: 3px solid green;*/
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 1.5rem;
+  color: #373737;
+}
+
+.footer-right{
+  text-align: right;
+  margin-right: 2rem;
+  color: #373737;
+}
+
+.footer-right span{
+  margin-left: .5rem;
 }
