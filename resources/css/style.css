@@ -1,5 +1,5 @@
 html {
-  font-family: Helvetica;
+  font-family: sans-serif;;
   font-size: 14px;
   margin: 0;
 }
@@ -39,6 +39,19 @@ html {
 
 .academy-mobile {
   display: none;
+}
+
+@media only screen and (max-width: 768px ){
+.academy-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+}
+.academy{
+  display: none;
+}
 }
 
 .nav {
@@ -240,7 +253,7 @@ html {
   color: #C0B283;
 }
 
-.other-info-mob {
+.other-info-mobile {
   display: none;
 }
 /*MEDIA QUERY*/
@@ -252,7 +265,7 @@ html {
     display: none;
   }
 
-  .other-info-mob{
+  .other-info-mobile{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,17 +300,16 @@ html {
 
 /*PROGRAMS SECTION BEGINS*/
 
-.programs{
-  background-color: #C0B283;
+.classes {
+  background-color:  #e6e6e6;
 }
-.program-list{
+.class-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.program{
-  /*border: 2px solid green;*/
+.class {
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -306,53 +318,68 @@ html {
   background-color: #F4F4F4;
 }
 
-.program-img img{
+.class-img img{
   width: 100%;
 }
 
-.program span{
+.class span {
   display: block;
 }
 
-.program-text{
+.class-text {
   margin: 16px;
   color: #373737;
 }
 
-.program:hover{
-  background-color: #DCD0C0;
+.class-text h2 {
+  margin-bottom: 16px;
+  color: #1a1a1a;
+  font-size: 2rem;
+}
+
+.class-text span {
+  margin: 8px 0;
+  color: #8c8c8c;
+}
+
+.class-text p {
+  margin: 8px 0;
+  color: #8c8c8c;
+}
+
+.class:hover {
+  background-color: #d9d9d9;
   color: #373737;
 }
 
-.programs-mob{
+.classes-mobile {
   display: none;
 }
 
-#start{
+.classes h1 {
   text-align: center;
   padding: 32px;
   margin: 0px;
-  font-family: 'Biryani';
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 /*PROGRAMS SECTION MOBILE*/
 @media only screen and (max-width: 480px){
-.programs{
+.classes {
   display: none;
 }
-.programs-mob{
+.classes-mobile {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #C0B283;
 
 }
-.program-text-mob:hover{
+.class-text-mobile:hover {
   background-color: #DCD0C0;
   color: #373737;
 }
-.program-text-mob{
+.class-text-mobile {
   margin-bottom: 8px;
   background-color: #F4F4f4;
 }
@@ -361,9 +388,9 @@ html {
 /*Thesis Exhibit*/
 
 
-.thesis-exhibit h1{
+.thesis h1 {
   text-align: center;
-  /*margin: 32px 0;*/
+  margin: 32px 0;
   color: #373737;
   font-size: 2rem;
   font-family: 'Biryani';
@@ -371,12 +398,12 @@ html {
 
 /*THESIS BEGINS*/
 
-.thesis-info{
+.thesis-info {
   display: flex;
   padding-bottom: 2rem;
 }
 
-.thesis-main-info{
+.thesis-uni-info {
   /*border: 1px solid red;*/
   display: flex;
   flex-direction: column;
@@ -385,40 +412,42 @@ html {
   width: 70%;
 }
 
-.thesis-video video{
+.thesis-video video {
   width: 100%;
   /*border: 3px solid green;*/
 }
 
-.thesis-video{
+.thesis-video {
   margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
-.thesis-video-text{
+.thesis-video-text {
   color: #373737;
 }
 
-.thesis-video-text h2{
+.thesis-video-text h2 {
   font-size: 1.75rem;
   /*border: 1px solid red;*/
   margin: 0;
 }
 
-.thesis-sub{
+.thesis-sub {
   display: flex;
 }
 
-.thesis-sub:nth-child(2n+0){
+.thesis-sub:nth-child(2n+0) {
   background-color: #DCD0C0;
 }
 
-.thesis-sub-img{
+.thesis-sub-img {
   margin: 16px;
 }
-.thesis-sub-img img{
+.thesis-sub-img img {
   width: 10rem;
 }
 
-.thesis-sub-txt{
+.thesis-sub-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -427,37 +456,37 @@ html {
   margin: 2rem;
 }
 
-.thesis-sub-txt h3{
+.thesis-sub-text h3 {
   font-size: 1.15rem;
   margin: 0;
 }
 
-.thesis-exhibit-mob{
+.thesis-mobile {
   display: none;
 }
 
-@media only screen and (max-width: 480px){
-  .thesis-exhibit{
+@media only screen and (max-width: 760px) {
+  .thesis {
     display: none;
   }
-  .thesis-exhibit-mob{
+  .thesis-mobile {
     display: flex;
     flex-direction: column;
   }
-  .thesis-exhibit-mob h1{
+  .thesis-mobile h1 {
     text-align: center;
   }
-  .thesis-video-mob video{
+  .thesis-video-mobile video {
     width: 100%;
   }
 
 }
 /*BEGIN FOOTER*/
 
-footer{
+footer {
   background-color: #C0B283;
 }
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   /*border: 3px solid green;*/
@@ -466,17 +495,17 @@ footer{
   align-items: center;
 }
 
-.footer-left{
+.footer-lefthand {
   margin-left: 1.5rem;
   color: #373737;
 }
 
-.footer-right{
+.footer-righthand {
   text-align: right;
   margin-right: 2rem;
   color: #373737;
 }
 
-.footer-right span{
+.footer-righthand span {
   margin-left: .5rem;
 }
