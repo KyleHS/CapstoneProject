@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;;
+  font-family: sans-serif;
   font-size: 14px;
   margin: 0;
 }
@@ -41,19 +41,6 @@ html {
   display: none;
 }
 
-@media only screen and (max-width: 768px ){
-.academy-mobile{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 64px;
-}
-.academy{
-  display: none;
-}
-}
-
 .nav {
   display: inline-flex;
 }
@@ -69,8 +56,21 @@ html {
   color: #595959;
 }
 
- /*1st Section*/
+ /*Shifts Heading to Logos*/
+@media only screen and (max-width: 768px ){
+.academy-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+}
+.academy{
+  display: none;
+}
+}
 
+ /*Learn Section Starts Here*/
 .learn-section {
   font-family: sans-serif;
   background-color: #e6e6e6;
@@ -126,7 +126,7 @@ html {
   display: none;
 }
 
-/*BANNER MOBILE*/
+/*Learn Section for Mobile*/
 @media only screen and (max-width: 768px){
 
 .learn-section {
@@ -135,13 +135,12 @@ html {
 .learn-mobile{
   display: flex;
   flex-direction: column;
-  background-color: #C0B283;
+  background-color: #e6e6e6;
 }
 
 .learn-mobile img{
   width: 100%;
   height: auto;
-  /*margin-bottom: 0;*/
 }
 
 .text-mobile{
@@ -170,20 +169,18 @@ html {
 }
 }
 
-/*COMPANY INFO!*/
+/*University Information Section Starts Here*/
 
 .information {
   display: flex;
-  /*border: 2px solid red;*/
   flex-direction: row;
-  font-family: "Hind Vadodara";
+  font-family: sans-serif;
 }
 
 .uni-info{
   display: flex;
   flex-direction: column;
   width: 60%;
-  /*border: 1px solid blue;*/
   margin: 32px 24px;
 }
 
@@ -206,20 +203,17 @@ html {
   flex-grow: 5;
   display: flex;
   flex-direction: column;
-  /*border: 2px solid green;*/
   border-left: 1px solid #DCD0C0;
 }
 
 .info {
   display: flex;
-  /*border: 1px solid blue;*/
 }
 .info:nth-child(2n+0) {
-  background-color: #DCD0C0;
+  background-color: #e6e6e6;
 }
 .info-img {
   margin: 16px;
-  /*border: 2px solid green;*/
 }
 
 .info-img img {
@@ -229,9 +223,7 @@ html {
 .text-info {
   display: flex;
   flex-direction: column;
-  /*border: 2px solid green;*/
   justify-content: center;
-  align-items:
 }
 
 .text-info h3 {
@@ -292,14 +284,9 @@ html {
     color: #373737;
     font-size: 1.15rem;
   }
-
-  /*.info-mob:nth-child(2n+0){
-    background-color: #DCD0C0;
-  }*/
 }
 
-/*PROGRAMS SECTION BEGINS*/
-
+/*Classes Section Starts Here*/
 .classes {
   background-color:  #e6e6e6;
 }
@@ -335,16 +322,19 @@ html {
   margin-bottom: 16px;
   color: #1a1a1a;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .class-text span {
   margin: 8px 0;
+  font-weight: bold;
   color: #8c8c8c;
 }
 
 .class-text p {
   margin: 8px 0;
   color: #8c8c8c;
+  font-weight: bold;
 }
 
 .class:hover {
@@ -363,7 +353,8 @@ html {
   font-weight: 800;
   font-size: 2.3rem;
 }
-/*PROGRAMS SECTION MOBILE*/
+
+/*Mobile Class Section*/
 @media only screen and (max-width: 480px){
 .classes {
   display: none;
@@ -383,20 +374,10 @@ html {
   margin-bottom: 8px;
   background-color: #F4F4f4;
 }
-
-}
-/*Thesis Exhibit*/
-
-
-.thesis h1 {
-  text-align: center;
-  margin: 32px 0;
-  color: #373737;
-  font-size: 2rem;
-  font-family: 'Biryani';
 }
 
-/*THESIS BEGINS*/
+
+/*Thesis Section Starts Here*/
 
 .thesis-info {
   display: flex;
@@ -404,7 +385,6 @@ html {
 }
 
 .thesis-uni-info {
-  /*border: 1px solid red;*/
   display: flex;
   flex-direction: column;
   margin-left: 24px;
@@ -414,7 +394,6 @@ html {
 
 .thesis-video video {
   width: 100%;
-  /*border: 3px solid green;*/
 }
 
 .thesis-video {
@@ -428,7 +407,6 @@ html {
 
 .thesis-video-text h2 {
   font-size: 1.75rem;
-  /*border: 1px solid red;*/
   margin: 0;
 }
 
@@ -437,7 +415,7 @@ html {
 }
 
 .thesis-sub:nth-child(2n+0) {
-  background-color: #DCD0C0;
+  background-color: #e6e6e6;
 }
 
 .thesis-sub-img {
@@ -461,10 +439,21 @@ html {
   margin: 0;
 }
 
+.thesis h1 {
+  text-align: center;
+  margin: 32px 0;
+  color: #373737;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: sans-serif;;
+}
+
+
 .thesis-mobile {
   display: none;
 }
 
+/*Sizing for Mobile Video*/
 @media only screen and (max-width: 760px) {
   .thesis {
     display: none;
@@ -479,12 +468,11 @@ html {
   .thesis-video-mobile video {
     width: 100%;
   }
-
 }
-/*BEGIN FOOTER*/
 
+/*Footer Starts*/
 footer {
-  background-color: #C0B283;
+  background-color: #e6e6e6;
 }
 .footer {
   display: flex;
@@ -493,19 +481,25 @@ footer {
   justify-content: space-between;
   height: 5rem;
   align-items: center;
+  font-weight: bold;
 }
 
 .footer-lefthand {
   margin-left: 1.5rem;
-  color: #373737;
 }
 
 .footer-righthand {
   text-align: right;
   margin-right: 2rem;
-  color: #373737;
 }
 
 .footer-righthand span {
   margin-left: .5rem;
+}
+
+/*Removes Terms/Privacy Text*/
+@media only screen and (max-width: 760px) {
+  .footer-righthand {
+    display: none;
+  }
 }
